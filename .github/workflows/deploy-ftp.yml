@@ -36,16 +36,22 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           server-dir: ${{ secrets.FTP_SERVER_DIR }}
           local-dir: ./
+          log-level: verbose
           exclude: |
-            **/.git*
-            **/.github/**
-            **/node_modules/**
-            **/.env
-            **/.env.*
-            **/app/Database/*.sqlite
-            **/storage/logs/**
-            **/storage/cache/**
-            **/tests/**
+            .git/**
+            .github/**
+            node_modules/**
+            src/**
             **/*.md
+            package.json
+            package-lock.json
+            tailwind.config.js
+            postcss.config.js
+            .env
+            .env.*
+            app/Database/*.sqlite
+            storage/logs/**
+            storage/cache/**
+            tests/**
             **/.DS_Store
             **/Thumbs.db
