@@ -42,16 +42,25 @@ jobs:
             .github/**
             node_modules/**
             src/**
-            **/*.md
+            .env
+            .env.*
+            .gitignore
+            .gitattributes
+            *.md
             package.json
             package-lock.json
             tailwind.config.js
             postcss.config.js
-            .env
-            .env.*
+            vite.config.*
+            tsconfig*.json
+            eslint.config.*
+            .eslintrc*
+            .prettierrc*
+            .prettierignore
+            .editorconfig
             app/Database/*.sqlite
             storage/logs/**
             storage/cache/**
             tests/**
-            **/.DS_Store
-            **/Thumbs.db
+            .DS_Store
+            Thumbs.db
