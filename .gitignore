@@ -1,0 +1,17 @@
+/node_modules/
+
+/public/dist/
+
+/.env
+
+/.env.*
+
+/app/Database/*.sqlite
+
+/storage/logs/
+
+/storage/cache/
+
+.DS_Store
+
+Thumbs.db
