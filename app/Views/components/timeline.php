@@ -12,10 +12,6 @@
                     <div class="h-2 w-2 rounded-full bg-white opacity-80"></div>
                 </div>
                 
-                <div class="ml-16 md:w-[calc(50%-2.5rem)] md:ml-0 p-6 bg-slate-900 border border-white/5 rounded-2xl hover:border-cyan-500/30 transition">
-                    <span class="inline-block px-2 py-0.5 rounded text-xs font-semibold bg-white/5 text-cyan-400 mb-2 border border-white/10">
-                        <?= e($item['year']) ?>
-                    </span>
                     <h3 class="text-lg font-bold text-white"><?= e($item['title']) ?></h3>
                     <div class="text-slate-400 text-sm font-medium mb-2"><?= e($item['place']) ?></div>
                     <p class="text-slate-500 text-sm leading-relaxed">
