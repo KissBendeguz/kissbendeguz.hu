@@ -2,8 +2,9 @@ name: Deploy to FTP
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
+  workflow_dispatch:
+    branches: [main]
 
 concurrency:
   group: deploy-ftp
