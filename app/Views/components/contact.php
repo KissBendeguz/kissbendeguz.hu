@@ -1,6 +1,4 @@
-<!-- CONTACT -->
 <section id="kapcsolat" class="py-20 relative overflow-hidden">
-    <!-- Background glow -->
     <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-cyan-900/20 rounded-full blur-[100px] -z-10"></div>
     
     <div class="max-w-4xl mx-auto px-4">
@@ -12,7 +10,6 @@
 
             <form id="contact-form" class="space-y-6">
                 <?= csrf_field() ?>
-                <!-- Honeypot -->
                 <div class="hidden">
                     <input type="text" name="honey_pot" value="">
                 </div>

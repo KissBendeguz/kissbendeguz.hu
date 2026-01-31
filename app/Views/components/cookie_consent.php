@@ -1,4 +1,3 @@
-<!-- Cookie Consent Banner -->
 <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 bg-slate-900/95 backdrop-blur-md border-t border-white/10 p-4 z-50 transform translate-y-full transition-transform duration-500 hidden text-sm">
     <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
         <div class="text-slate-300 text-center md:text-left">
@@ -18,7 +17,6 @@
     </div>
 </div>
 
-<!-- Cookie Settings Modal -->
 <div id="cookie-settings-modal" class="fixed inset-0 z-[60] hidden bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
     <div class="bg-slate-900 border border-white/10 rounded-2xl p-6 w-full max-w-md shadow-2xl relative">
         <button onclick="CookieConsent.closeSettings()" class="absolute top-4 right-4 text-slate-400 hover:text-white">
@@ -58,7 +56,6 @@ const CookieConsent = {
             setTimeout(() => {
                 const banner = document.getElementById('cookie-banner');
                 banner.classList.remove('hidden');
-                // Force reflow
                 void banner.offsetWidth;
                 banner.classList.remove('translate-y-full');
             }, 1000);
@@ -75,7 +72,6 @@ const CookieConsent = {
 
     showSettings() {
         document.getElementById('cookie-settings-modal').classList.remove('hidden');
-        // Load current state
         const settings = JSON.parse(localStorage.getItem('cookie_consent') || '{"analytics": false}');
         document.getElementById('cookie-analytics').checked = settings.analytics;
     },
@@ -102,8 +98,6 @@ const CookieConsent = {
         const consent = JSON.parse(localStorage.getItem('cookie_consent'));
         if (consent && consent.analytics) {
             console.log('Analytics cookies accepted - Loading scripts...');
-            // Here you would dynamically insert GA scripts if needed
-            // e.g. loadScript('https://www.googletagmanager.com/gtag/js?id=UA-XXXX');
         }
     },
 

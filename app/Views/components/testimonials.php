@@ -1,6 +1,4 @@
-<!-- TESTIMONIALS -->
 <section id="velemenyek" class="py-32 relative overflow-hidden">
-    <!-- Background Decor -->
     <div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-slate-900 to-transparent opacity-50 z-0 pointer-events-none"></div>
     <div class="absolute bottom-0 left-0 w-96 h-96 bg-cyan-500/5 rounded-full blur-[100px] z-0 pointer-events-none"></div>
 
@@ -14,8 +12,7 @@
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <?php foreach ($testimonials as $t): ?>
-            <div class="group bg-slate-900 border border-white/5 rounded-2xl p-8 relative hover:border-amber-500/30 transition duration-500 hover:shadow-[0_10px_40px_-10px_rgba(251,191,36,0.1)] reveal flex flex-col">
-                <!-- Quote Icon -->
+            <div class="group bg-slate-900 border border-white/5 rounded-2xl p-8 relative hover:border-amber-500/30 transition duration-500 hover:shadow-[0_10px_40px_-10px_rgba(251,191,36,0.1)] reveal flex flex-col">    
                 <div class="absolute top-6 right-8 text-6xl text-white/5 font-serif leading-none group-hover:text-amber-500/10 transition duration-500">”</div>
                 
                 <div class="flex-1 mb-8 relative z-10">
