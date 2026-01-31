@@ -78,11 +78,9 @@
 </div>
 
 <script>
-    // Utils
     function openModal(id) { document.getElementById(id).classList.remove('hidden'); }
     function closeModal(id) { document.getElementById(id).classList.add('hidden'); }
 
-    // Init Sortable for Items (Drag & Drop)
     document.querySelectorAll('.items-container').forEach(el => {
         new Sortable(el, {
             group: 'items', // Allow moving between categories
@@ -95,7 +93,6 @@
         });
     });
 
-    // Init Sortable for Categories
     new Sortable(document.getElementById('categories-container'), {
          animation: 150,
          handle: '.handle-cat',
@@ -119,7 +116,6 @@
             });
         });
 
-        // Send to server
         fetch('/admin/stack/reorder-items', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },

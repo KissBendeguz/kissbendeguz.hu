@@ -1,4 +1,3 @@
-<!-- PROJECTS -->
 <section id="projektek" class="py-20 bg-slate-950/50 relative">
     <div class="max-w-6xl mx-auto px-4">
         <div class="mb-12 reveal">
@@ -9,15 +8,13 @@
         <div class="grid md:grid-cols-2 gap-8">
             <?php foreach ($projects as $proj): ?>
             <div class="group relative bg-slate-900 border border-white/5 rounded-2xl overflow-hidden hover:border-cyan-500/30 transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-900/20 reveal">
-                <!-- Image Layout -->
                 <div class="h-48 bg-slate-800 relative overflow-hidden group">
                     <?php 
-                    $imagePath = 'assets/img/' . $proj['image']; // Default simple path
+                    $imagePath = 'assets/img/' . $proj['image']; 
                     if (strpos($proj['image'], 'assets/uploads/') === 0) {
-                        $imagePath = $proj['image']; // If it's an uploaded file path
+                        $imagePath = $proj['image']; 
                     }
                     
-                    // Simple check if it looks like a path or just filename
                     $fullPath = __DIR__ . '/../../../public/' . $imagePath;
                     
                     if (!empty($proj['image']) && (file_exists($fullPath) || strpos($proj['image'], '/') !== false)): 

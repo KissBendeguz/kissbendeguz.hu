@@ -1,4 +1,3 @@
-<!-- STACK -->
 <section id="stack" class="py-32 bg-slate-950/30">
     <div class="max-w-7xl mx-auto px-4">
         <div class="mb-16 reveal text-center">

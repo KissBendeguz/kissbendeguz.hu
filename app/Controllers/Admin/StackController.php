@@ -12,7 +12,6 @@ class StackController extends AdminController {
         $categories = $db->query("SELECT * FROM stack_categories ORDER BY sort_order ASC")->fetchAll();
         $items = $db->query("SELECT * FROM stack_items ORDER BY sort_order ASC")->fetchAll();
         
-        // Group items by category
         $grouped = [];
         foreach ($categories as $cat) {
             $grouped[$cat['id']] = $cat;
@@ -78,9 +77,6 @@ class StackController extends AdminController {
     public function reorderItems() {
         $data = json_decode(file_get_contents('php://input'), true);
         if (!$data || !isset($data['order'])) return;
-
-        // CSRF Check (Simplified for AJAX)
-        // if (!Csrf::verify($data['csrf_token'] ?? '')) { echo json_encode(['success'=>false, 'error'=>'csrf']); exit; }
 
         $db = Database::connect();
         $db->beginTransaction();

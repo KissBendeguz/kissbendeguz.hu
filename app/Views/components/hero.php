@@ -1,7 +1,5 @@
-<!-- HERO -->
 <section class="relative min-h-[100dvh] flex items-center justify-center px-4 overflow-hidden" id="home">
     
-    <!-- Background Elements -->
     <div class="absolute inset-0 z-0">
         <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-[100px] animate-pulse"></div>
         <div class="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-indigo-500/10 rounded-full blur-[120px] opacity-60"></div>
@@ -9,7 +7,6 @@
 
     <div class="max-w-7xl w-full mx-auto grid lg:grid-cols-2 gap-12 sm:gap-16 items-center relative z-10 pt-20 lg:pt-0">
         
-        <!-- Left Content -->
         <div class="space-y-8 lg:space-y-10 reveal text-center lg:text-left order-2 lg:order-1">
             <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-800/50 border border-green-500/20 text-green-400 text-xs sm:text-sm font-semibold tracking-wide uppercase backdrop-blur-sm">
                 <span class="relative flex h-2.5 w-2.5">
@@ -55,25 +52,19 @@
             </div>
         </div>
 
-        <!-- Right Visual (Profile Image) -->
         <div class="relative order-1 lg:order-2 flex justify-center items-center">
             <div class="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-[500px] lg:h-[500px]">
                 
-                <!-- Rotating Rings -->
                 <div class="absolute inset-0 rounded-full border border-cyan-500/20 animate-spin-slower"></div>
                 <div class="absolute inset-4 rounded-full border border-emerald-500/20 animate-spin-reverse-slower"></div>
                 
-                <!-- Glow -->
                 <div class="absolute inset-10 bg-gradient-to-tr from-cyan-500/30 to-emerald-500/30 rounded-full blur-[60px] animate-pulse-slow"></div>
 
-                <!-- Main Image Container -->
                 <div class="absolute inset-8 sm:inset-10 lg:inset-12 rounded-full overflow-hidden border-2 border-white/10 shadow-2xl relative z-10 group">
                      <img src="<?= asset('assets/img/profile.jpg') ?>" alt="Profilkép" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                     <!-- Overlay Reflection -->
                      <div class="absolute inset-0 bg-gradient-to-tr from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
                 </div>
 
-                <!-- Floating Tech Badges -->
                 <div class="absolute top-10 right-0 sm:right-4 lg:right-10 bg-slate-900/80 backdrop-blur-md border border-white/10 p-3 rounded-2xl shadow-xl animate-float z-20">
                      <i class="bi bi-code-slash text-2xl text-cyan-400"></i>
                 </div>
@@ -89,7 +80,6 @@
 
     </div>
 
-    <!-- Scroll Indicator -->
     <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce hidden lg:block">
         <a href="#projektek" class="text-slate-500 hover:text-white transition">
             <i class="bi bi-chevron-down text-2xl"></i>
